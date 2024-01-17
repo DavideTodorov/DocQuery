@@ -35,14 +35,14 @@ async def main():
 
 @cl.on_message
 async def main(message: cl.Message):
-    # prompt = message.content
+    prompt = message.content
 
     chain = cl.user_session.get("chain")
     langchain_callback = cl.AsyncLangchainCallbackHandler(
         stream_final_answer=True, answer_prefix_tokens=["FINAL", "ANSWER"]
     )
     langchain_callback.answer_reached = True
-    res = await chain.acall(message, callbacks=[langchain_callback])
+    res = await chain.acall(prompt, callbacks=[langchain_callback])
 
     answer = res["answer"]
     sources = res["sources"].strip()
