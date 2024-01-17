@@ -1,6 +1,6 @@
 ## DocQuery
 
-DocQuery is a document based Q&A chatbot
+DocQuery is a document based Q&A chatbot. You can upload PDF or TXT file and then ask questions related to the content of the file
 
 ### Tech Stack
 
