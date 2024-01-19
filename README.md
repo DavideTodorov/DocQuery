@@ -28,6 +28,8 @@ of the file
 
 Go to the top level folder and run the following commands:
 
+- Make sure you have set your OPENAI_API_KEY as environment variable
+
 - Install required packages:
 
 ```
