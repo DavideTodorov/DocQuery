@@ -41,3 +41,7 @@ pip3 install -r requirements.txt
 ```
 chainlit run document_based_qa_system.py -w
 ```
+
+### Flow Diagram
+
+![FlowDiagram](flowDiagram.png)
