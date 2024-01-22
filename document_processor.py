@@ -5,7 +5,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
 import chainlit as cl
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=20)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=200, chunk_overlap=80)
 embeddings = OpenAIEmbeddings()
 
 
